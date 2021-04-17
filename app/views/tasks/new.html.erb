@@ -1,0 +1,9 @@
+<h2>What do you need to do now?</h2>
+
+<%= form_for(@task) do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :details %>
+  <%= form.text_field :details %>
+  <%= form.submit "Create task" %>
+<% end %>
