@@ -3,5 +3,9 @@
   <%= form.text_field :title %>
   <%= form.label :details %>
   <%= form.text_field :details %>
+  <% if task.persisted? %>
+    <%= form.check_box :completed %>
+    <%= form.label :completed, "Completed?" %>
+  <% end %>
   <%= form.submit %>
 <% end %>
