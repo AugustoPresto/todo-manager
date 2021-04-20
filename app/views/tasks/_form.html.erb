@@ -1,17 +1,17 @@
 <%= form_for(@task) do |form| %>
-  <div class="mb-3">
+  <div class="m-3">
     <%= form.label :title, :class => "form-label" %>
     <%= form.text_field :title, :class => "form-control", :id => "exampleInputEmail1" %>
   </div>
-  <div class="mb-3">
+  <div class="m-3">
     <%= form.label :details, :class => "form-label" %>
     <%= form.text_field :details, :class => "form-control", :id => "exampleInputEmail1" %>
   </div>
   <% if task.persisted? %>
-    <div class="mb-3 form-check">
+    <div class="m-3 form-check">
       <%= form.check_box :completed, class: "form-check-input", id: "exampleCheck1" %>
       <%= form.label :completed, "Completed?", :class => "form-check-label" %>
     </div>
   <% end %>
-  <%= form.submit nil, class: 'btn btn-outline-secondary btn-sm' %>
+  <%= form.submit nil, class: 'm-3 btn btn-outline-secondary btn-sm' %>
 <% end %>
