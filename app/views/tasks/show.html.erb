@@ -1,6 +1,6 @@
-<h2><%= @task.title %></h2>
-<h4><%= @task.details %></h4>
+<h2 class="display-3 m-3"><%= @task.title %></h2>
+<h5 class="fs-5 m-3"><%= @task.details %></h5>
 
-<%= link_to 'Update this task', edit_task_path %>
+<%= link_to 'Update this task', edit_task_path, :class => "btn btn-outline-secondary btn-sm m-3" %>
 
-<%= link_to 'Back to all tasks', tasks_path %>
+<%= link_to 'Back to all tasks', tasks_path, :class => "btn btn-outline-secondary btn-sm" %>
